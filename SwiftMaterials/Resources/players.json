@@ -1,0 +1,29 @@
+{
+    "Captain": "Rohit Sharma",
+    "Players": [
+        {
+            "id": "1",
+            "name": "Rohit Sharma",
+            "role": "Captain",
+            "batting_style": "Right-hand bat",
+            "bowling_style": "Right-arm offbreak",
+            "picture_url": "https://img.jagranjosh.com/images/2024/May/252024/rohit-sharma.jpg"
+        },
+        {
+            "id": "2",
+            "name": "Hardik Pandya",
+            "role": "All-rounder",
+            "batting_style": "Right-hand bat",
+            "bowling_style": "Right-arm fast-medium",
+            "picture_url": "https://imgeng.jagran.com/images/2023/oct/Hardik-pandya1698646980181.jpg"
+        },
+        {
+            "id": "3",
+            "name": "Virat Kohli",
+            "role": "Batsman",
+            "batting_style": "Right-hand bat",
+            "bowling_style": "Right-arm medium",
+            "picture_url": "https://www.jagranimages.com/images/20_09_2019-virat_kohli_19596025.jpg"
+        }
+    ]
+}
