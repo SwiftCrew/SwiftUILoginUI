@@ -8,10 +8,7 @@
 import SwiftUI
 
 struct RegisterView: View {
-
-    @State private var name: String = ""
-    @State private var email: String = ""
-    @State private var password: String = ""
+    @StateObject var viewModel = RegisterViewModel()
 
     var body: some View {
         VStack {
@@ -23,23 +20,35 @@ struct RegisterView: View {
             )
 
             Form {
-                TextField("User Name", text: $name)
+
+                if !viewModel.errorMessage.isEmpty {
+
+                    Text(viewModel.errorMessage)
+                        .foregroundStyle(.red)
+                }
+                TextField("User Name", text: $viewModel.name)
                     .textFieldStyle(DefaultTextFieldStyle())
                     .autocorrectionDisabled()
 
-                TextField("Email Address", text: $email)
+                TextField("Email Address", text: $viewModel.email)
                     .textFieldStyle(DefaultTextFieldStyle())
                     .autocapitalization(.none)
                     .autocorrectionDisabled()
 
-                SecureField("Enter Password", text: $password)
+                SecureField("Enter Password", text: $viewModel.password)
                     .textFieldStyle(DefaultTextFieldStyle())
 
                 MTButton(title: "Create Account", foreground: .white, background: .green, acton: {
-                    // Login
+                    // Register
+                    viewModel.register()
                 })
                 .padding()
-            }
+            }.navigationDestination(
+                isPresented: $viewModel.success,
+                destination: {
+                    ListVeiw()
+                }
+            )
 
             .offset(y: -50)
         }

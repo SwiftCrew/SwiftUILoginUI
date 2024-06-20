@@ -54,7 +54,7 @@ struct LoginView: View {
             VStack {
                 Text("New around here?")
                 NavigationLink {
-                    EmptyView()
+                    RegisterView()
                 } label: {
                     Text("Create An Account")
                 }

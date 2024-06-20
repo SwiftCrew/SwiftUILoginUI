@@ -25,6 +25,7 @@
 		F13E8C542C22F8390088AB83 /* players.json in Resources */ = {isa = PBXBuildFile; fileRef = F13E8C532C22F8390088AB83 /* players.json */; };
 		F13E8C562C22FCBB0088AB83 /* CircularImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E8C552C22FCBB0088AB83 /* CircularImage.swift */; };
 		F13E8C582C22FDA90088AB83 /* RectangleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E8C572C22FDA90088AB83 /* RectangleImage.swift */; };
+		F13E8C5A2C2328690088AB83 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E8C592C2328690088AB83 /* RegisterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		F13E8C532C22F8390088AB83 /* players.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = players.json; sourceTree = "<group>"; };
 		F13E8C552C22FCBB0088AB83 /* CircularImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImage.swift; sourceTree = "<group>"; };
 		F13E8C572C22FDA90088AB83 /* RectangleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleImage.swift; sourceTree = "<group>"; };
+		F13E8C592C2328690088AB83 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 			children = (
 				F13E8C4A2C22C1270088AB83 /* LoginViewModel.swift */,
 				F13E8C4E2C22F48C0088AB83 /* PlayerViewModel.swift */,
+				F13E8C592C2328690088AB83 /* RegisterViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				F13E8C582C22FDA90088AB83 /* RectangleImage.swift in Sources */,
 				F13E8C462C22BBE70088AB83 /* RegisterView.swift in Sources */,
 				F13E8C4B2C22C1270088AB83 /* LoginViewModel.swift in Sources */,
+				F13E8C5A2C2328690088AB83 /* RegisterViewModel.swift in Sources */,
 				F13E8C562C22FCBB0088AB83 /* CircularImage.swift in Sources */,
 				F13E8C282C2158DB0088AB83 /* DetailView.swift in Sources */,
 				F13E8C362C22A0990088AB83 /* LoginView.swift in Sources */,
