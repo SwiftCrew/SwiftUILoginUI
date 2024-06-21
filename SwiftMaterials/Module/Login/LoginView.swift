@@ -47,10 +47,11 @@ struct LoginView: View {
             }.navigationDestination(
                 isPresented: $viewModel.success,
                 destination: {
-                    ListVeiw()
+                    PragrammListView()
                 }
             )
             .offset(y: -50)
+            .loadingIndicator(viewModel.isLoading)
             VStack {
                 Text("New around here?")
                 NavigationLink {
@@ -58,9 +59,8 @@ struct LoginView: View {
                 } label: {
                     Text("Create An Account")
                 }
+                .padding(.bottom,  50)
             }
-            .padding(.bottom,  50)
-            Spacer()
         }
     }
 }

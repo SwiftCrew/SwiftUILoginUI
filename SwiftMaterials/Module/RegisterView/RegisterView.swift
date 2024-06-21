@@ -43,13 +43,8 @@ struct RegisterView: View {
                     viewModel.register()
                 })
                 .padding()
-            }.navigationDestination(
-                isPresented: $viewModel.success,
-                destination: {
-                    ListVeiw()
-                }
-            )
-
+            }
+            .loadingIndicator(viewModel.isLoading)
             .offset(y: -50)
         }
     }

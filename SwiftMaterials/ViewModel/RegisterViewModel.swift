@@ -13,6 +13,7 @@ class RegisterViewModel: ObservableObject {
     @Published var password: String = ""
     @Published var errorMessage: String = ""
     @Published var success: Bool = false
+    @Published var isLoading = false
 
     
     func register() {
@@ -20,8 +21,18 @@ class RegisterViewModel: ObservableObject {
 
             return
         }
-        success = true
-
+        isLoading = true
+        let user = User(name: name, email: email, password: password)
+        FirebaseManager.shared.register(user: user) { [weak self] isSuccess in
+            self?.isLoading = false
+            guard let weakSelf = self, isSuccess else {
+                debugPrint("firebase login failed")
+                self?.success = false
+                return
+            }
+            debugPrint("firebase login success")
+            weakSelf.success = true
+        }
     }
 
     func validation() -> Bool {
