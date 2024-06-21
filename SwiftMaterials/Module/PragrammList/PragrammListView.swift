@@ -14,7 +14,9 @@ struct PragrammListView: View {
     var body: some View {
         List(viewModel.list, id: \.id) { list in
             if list.type == .todoList {
-                Text(list.name)
+                Text(list.name).onTapGesture {
+                    tabbedScreen = true
+                }
             } else {
                 NavigationLink {
                     ListVeiw()
@@ -22,9 +24,7 @@ struct PragrammListView: View {
                     Text(list.name)
                 }
             }
-        }.onTapGesture(perform: {
-            tabbedScreen = true
-        })
+        }
         .listStyle(.plain)
         .navigationTitle("Programm List")
 
