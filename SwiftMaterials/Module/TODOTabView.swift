@@ -10,7 +10,7 @@ import SwiftUI
 struct TODOTabView: View {
     var body: some View {
         TabView {
-            ToDoListView()
+            ToDoListView(userId: FirebaseManager.shared.currentLoggeduId)
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }

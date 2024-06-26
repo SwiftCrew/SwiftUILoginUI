@@ -27,7 +27,6 @@ struct PragrammListView: View {
         }
         .listStyle(.plain)
         .navigationTitle("Programm List")
-
     }
 }
 

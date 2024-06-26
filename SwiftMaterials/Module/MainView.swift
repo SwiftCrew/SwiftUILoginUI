@@ -13,7 +13,7 @@ struct MainView: View {
     @AppStorage("tabbedScreen") private var tabbedScreen: Bool = false
 
     var body: some View {
-        if tabbedScreen {
+        if tabbedScreen && viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
 
             TODOTabView()
 

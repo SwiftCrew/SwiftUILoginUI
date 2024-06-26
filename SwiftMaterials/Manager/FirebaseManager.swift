@@ -10,12 +10,14 @@ import Firebase
 import FirebaseAuth
 
 typealias UserCompletion = (Bool) -> Void
+typealias ToDoListsCompletion = ([ToDoListItem]?, Error?) -> Void
+enum FConstants {
+    static let users = "users"
+    static let todos = "todos"
+}
 
 class FirebaseManager {
 
-    enum Constants {
-        static let users = "users"
-    }
 
     static var shared = FirebaseManager()
 
@@ -26,6 +28,31 @@ class FirebaseManager {
     var isSignedIn: Bool {
 
         return Auth.auth().currentUser != nil
+    }
+
+    var currentLoggeduId: String {
+
+        return Auth.auth().currentUser?.uid ?? ""
+    }
+
+    func fetchToDoList(
+        id: String,
+        completion: @escaping ToDoListsCompletion
+    ) {
+        let path = "\(FConstants.users)/\(currentLoggeduId)/\(FConstants.todos)"
+        db.collection(path).getDocuments { snapshot, error in
+            if let unwrapError = error {
+
+                debugPrint("unwrapError", unwrapError)
+                completion(nil, unwrapError)
+            } else {
+                let item: [ToDoListItem] = snapshot?.documents.compactMap { document -> ToDoListItem? in
+                    try? document.data(as: ToDoListItem.self)
+                } ?? []
+                debugPrint("item", item)
+                completion(item, nil)
+            }
+        }
     }
 
     func login(user: User, completion: @escaping UserCompletion) {
@@ -64,10 +91,26 @@ class FirebaseManager {
 
     func insertUserRecord(user: User) {
 
-        db.collection(Constants.users)
+        db.collection(FConstants.users)
             .document(user.id)
             .setData(user.toDictionary)
+    }
 
+    func insertToDoCollection(model: ToDoListItem) {
+
+        db.collection(FConstants.users)
+            .document(currentLoggeduId)
+            .collection(FConstants.todos)
+            .document(model.id)
+            .setData(model.toDictionary)
+    }
+
+    func deleteItem(model: ToDoListItem) {
+        db.collection(FConstants.users)
+            .document(currentLoggeduId)
+            .collection(FConstants.todos)
+            .document(model.id)
+            .delete()
     }
 
     func signOut() {
