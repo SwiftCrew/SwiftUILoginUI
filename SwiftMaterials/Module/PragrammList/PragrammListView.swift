@@ -19,7 +19,11 @@ struct PragrammListView: View {
                 }
             } else {
                 NavigationLink {
-                    ListVeiw()
+                    if list.type == .progressBar {
+                        ProgressBarView()
+                    } else {
+                        ListVeiw()
+                    }
                 } label: {
                     Text(list.name)
                 }

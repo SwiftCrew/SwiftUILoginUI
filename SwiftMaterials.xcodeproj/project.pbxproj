@@ -50,6 +50,8 @@
 		F1BC794D2C25AC7100E25DBE /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BC794C2C25AC7100E25DBE /* NewItemView.swift */; };
 		F1BC794F2C25ACC200E25DBE /* NewItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BC794E2C25ACC200E25DBE /* NewItemViewModel.swift */; };
 		F1BC79512C25BBAE00E25DBE /* TODOTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BC79502C25BBAE00E25DBE /* TODOTabView.swift */; };
+		F1C194152C36A9C200A0FAD0 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C194142C36A9C200A0FAD0 /* ProgressBarView.swift */; };
+		F1C194172C36B03C00A0FAD0 /* MTProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C194162C36B03C00A0FAD0 /* MTProgressBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +94,8 @@
 		F1BC794C2C25AC7100E25DBE /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
 		F1BC794E2C25ACC200E25DBE /* NewItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewModel.swift; sourceTree = "<group>"; };
 		F1BC79502C25BBAE00E25DBE /* TODOTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOTabView.swift; sourceTree = "<group>"; };
+		F1C194142C36A9C200A0FAD0 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		F1C194162C36B03C00A0FAD0 /* MTProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTProgressBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,7 @@
 				F13E8C552C22FCBB0088AB83 /* CircularImage.swift */,
 				F13E8C572C22FDA90088AB83 /* RectangleImage.swift */,
 				F1BC79352C2455DE00E25DBE /* Extension.swift */,
+				F1C194162C36B03C00A0FAD0 /* MTProgressBar.swift */,
 			);
 			path = Utills;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 				F13E8C312C22A0440088AB83 /* ListView */,
 				F1BC794C2C25AC7100E25DBE /* NewItemView.swift */,
 				F1BC79502C25BBAE00E25DBE /* TODOTabView.swift */,
+				F1C194142C36A9C200A0FAD0 /* ProgressBarView.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -402,6 +408,7 @@
 				F13E8C282C2158DB0088AB83 /* DetailView.swift in Sources */,
 				F13E8C362C22A0990088AB83 /* LoginView.swift in Sources */,
 				F13E8C482C22BF7A0088AB83 /* MTButton.swift in Sources */,
+				F1C194172C36B03C00A0FAD0 /* MTProgressBar.swift in Sources */,
 				F1BC79512C25BBAE00E25DBE /* TODOTabView.swift in Sources */,
 				F13E8C382C22A0C90088AB83 /* Constant.swift in Sources */,
 				F14642292C299BF300949BEE /* ToDoListItem.swift in Sources */,
@@ -423,6 +430,7 @@
 				F13E8C4F2C22F48C0088AB83 /* PlayerViewModel.swift in Sources */,
 				F146422B2C2AA87D00949BEE /* ToDoListItemView.swift in Sources */,
 				F176E0892C24190B00A622C0 /* FirebaseManager.swift in Sources */,
+				F1C194152C36A9C200A0FAD0 /* ProgressBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

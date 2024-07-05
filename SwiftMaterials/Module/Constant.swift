@@ -12,4 +12,5 @@ enum Screen: Hashable {
     case detail
     case login
     case todoList
+    case progressBar
 }

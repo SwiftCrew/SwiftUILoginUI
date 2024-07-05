@@ -15,7 +15,8 @@ class PragrammListViewModel: ObservableObject {
     init() {
         list = [
             ProgrammList(name: "Player List", type: .list),
-            ProgrammList(name: "To Do List", type: .todoList)
+            ProgrammList(name: "To Do List", type: .todoList),
+            ProgrammList(name: "Progress Bar", type: .progressBar)
         ]
     }
 }
