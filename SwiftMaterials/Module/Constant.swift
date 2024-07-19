@@ -13,4 +13,6 @@ enum Screen: Hashable {
     case login
     case todoList
     case progressBar
+    case transitionAnimation
+    case promoCode
 }

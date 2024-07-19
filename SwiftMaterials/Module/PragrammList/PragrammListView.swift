@@ -21,6 +21,10 @@ struct PragrammListView: View {
                 NavigationLink {
                     if list.type == .progressBar {
                         ProgressBarView()
+                    } else if list.type == .transitionAnimation {
+                        AnimatedExampleView()
+                    } else if list.type == .promoCode {
+                        PromoCodeView()
                     } else {
                         ListVeiw()
                     }

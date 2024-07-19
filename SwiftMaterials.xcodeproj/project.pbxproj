@@ -29,6 +29,9 @@
 		F14642292C299BF300949BEE /* ToDoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14642282C299BF300949BEE /* ToDoListItem.swift */; };
 		F146422B2C2AA87D00949BEE /* ToDoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F146422A2C2AA87D00949BEE /* ToDoListItemView.swift */; };
 		F146422D2C2BAFDC00949BEE /* ToDoListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F146422C2C2BAFDC00949BEE /* ToDoListItemViewModel.swift */; };
+		F159D34B2C4672CC002A468C /* AnimatedExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F159D34A2C4672CC002A468C /* AnimatedExampleView.swift */; };
+		F159D34D2C467740002A468C /* PromoCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F159D34C2C467740002A468C /* PromoCodeView.swift */; };
+		F159D34F2C4691C2002A468C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F159D34E2C4691C2002A468C /* ColorExtension.swift */; };
 		F176E0892C24190B00A622C0 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176E0882C24190B00A622C0 /* FirebaseManager.swift */; };
 		F1BC79272C244B4200E25DBE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F1BC79262C244B4200E25DBE /* FirebaseAuth */; };
 		F1BC79292C244B4200E25DBE /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F1BC79282C244B4200E25DBE /* FirebaseDatabase */; };
@@ -78,6 +81,9 @@
 		F14642282C299BF300949BEE /* ToDoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItem.swift; sourceTree = "<group>"; };
 		F146422A2C2AA87D00949BEE /* ToDoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemView.swift; sourceTree = "<group>"; };
 		F146422C2C2BAFDC00949BEE /* ToDoListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewModel.swift; sourceTree = "<group>"; };
+		F159D34A2C4672CC002A468C /* AnimatedExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedExampleView.swift; sourceTree = "<group>"; };
+		F159D34C2C467740002A468C /* PromoCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCodeView.swift; sourceTree = "<group>"; };
+		F159D34E2C4691C2002A468C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		F176E0882C24190B00A622C0 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		F1BC79302C244F8C00E25DBE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F1BC79332C2454CD00E25DBE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -164,6 +170,7 @@
 				F13E8C572C22FDA90088AB83 /* RectangleImage.swift */,
 				F1BC79352C2455DE00E25DBE /* Extension.swift */,
 				F1C194162C36B03C00A0FAD0 /* MTProgressBar.swift */,
+				F159D34E2C4691C2002A468C /* ColorExtension.swift */,
 			);
 			path = Utills;
 			sourceTree = "<group>";
@@ -184,6 +191,8 @@
 				F1BC794C2C25AC7100E25DBE /* NewItemView.swift */,
 				F1BC79502C25BBAE00E25DBE /* TODOTabView.swift */,
 				F1C194142C36A9C200A0FAD0 /* ProgressBarView.swift */,
+				F159D34A2C4672CC002A468C /* AnimatedExampleView.swift */,
+				F159D34C2C467740002A468C /* PromoCodeView.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -407,8 +416,11 @@
 				F146422D2C2BAFDC00949BEE /* ToDoListItemViewModel.swift in Sources */,
 				F13E8C282C2158DB0088AB83 /* DetailView.swift in Sources */,
 				F13E8C362C22A0990088AB83 /* LoginView.swift in Sources */,
+				F159D34F2C4691C2002A468C /* ColorExtension.swift in Sources */,
 				F13E8C482C22BF7A0088AB83 /* MTButton.swift in Sources */,
+				F159D34B2C4672CC002A468C /* AnimatedExampleView.swift in Sources */,
 				F1C194172C36B03C00A0FAD0 /* MTProgressBar.swift in Sources */,
+				F159D34D2C467740002A468C /* PromoCodeView.swift in Sources */,
 				F1BC79512C25BBAE00E25DBE /* TODOTabView.swift in Sources */,
 				F13E8C382C22A0C90088AB83 /* Constant.swift in Sources */,
 				F14642292C299BF300949BEE /* ToDoListItem.swift in Sources */,
