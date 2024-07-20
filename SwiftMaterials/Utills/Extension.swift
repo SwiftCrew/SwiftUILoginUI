@@ -79,3 +79,39 @@ struct Loader: View {
             }
     }
 }
+
+struct MusicGroupBoxStyle: GroupBoxStyle {
+
+    func makeBody(configuration: Configuration) -> some View {
+        VStack(alignment: .leading) {
+            configuration.label
+                .bold()
+                .foregroundStyle(.pink)
+            configuration.content
+        }
+        .padding()
+        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 12))
+    }
+}
+
+extension GroupBoxStyle where Self == MusicGroupBoxStyle {
+    static var music: MusicGroupBoxStyle { .init() }
+}
+
+struct TravelButton: ButtonStyle {
+
+    let systemImageName: String
+
+
+    func makeBody(configuration: Configuration) -> some View {
+
+        Image(systemName: systemImageName)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .foregroundStyle(Color.white)
+            .frame(width: 33, height: 33)
+            .padding()
+            .background(.pink)
+            .clipShape(Circle())
+    }
+}

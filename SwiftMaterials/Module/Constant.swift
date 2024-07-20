@@ -17,4 +17,5 @@ enum Screen: Hashable {
     case promoCode
     case scrollViewWithAnimation
     case musicPlayerViewLayout
+    case mapKitWithActionSheet
 }

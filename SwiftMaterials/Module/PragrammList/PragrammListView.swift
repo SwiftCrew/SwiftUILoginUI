@@ -29,6 +29,8 @@ struct PragrammListView: View {
                         ScrollViewAnimation()
                     } else if list.type == .musicPlayerViewLayout {
                         MusicPlayerViewLayout()
+                    } else if list.type == .mapKitWithActionSheet {
+                        MapView()
                     } else {
                         ListVeiw()
                     }
