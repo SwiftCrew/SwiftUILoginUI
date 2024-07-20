@@ -25,6 +25,8 @@ struct PragrammListView: View {
                         AnimatedExampleView()
                     } else if list.type == .promoCode {
                         PromoCodeView()
+                    } else if list.type == .scrollViewWithAnimation {
+                        ScrollViewAnimation()
                     } else {
                         ListVeiw()
                     }

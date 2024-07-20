@@ -18,7 +18,8 @@ class PragrammListViewModel: ObservableObject {
             ProgrammList(name: "To Do List", type: .todoList),
             ProgrammList(name: "Progress Bar", type: .progressBar),
             ProgrammList(name: "Animated View", type: .transitionAnimation),
-            ProgrammList(name: "Promo Code", type: .promoCode)
+            ProgrammList(name: "Promo Code", type: .promoCode),
+            ProgrammList(name: "ScrollView Animation", type: .scrollViewWithAnimation)
         ]
     }
 }

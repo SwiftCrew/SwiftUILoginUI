@@ -15,4 +15,5 @@ enum Screen: Hashable {
     case progressBar
     case transitionAnimation
     case promoCode
+    case scrollViewWithAnimation
 }
