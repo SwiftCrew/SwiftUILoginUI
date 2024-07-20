@@ -31,6 +31,8 @@ struct PragrammListView: View {
                         MusicPlayerViewLayout()
                     } else if list.type == .mapKitWithActionSheet {
                         MapView()
+                    } else if list.type == .onboardingView {
+                        OnboardingView()
                     } else {
                         ListVeiw()
                     }

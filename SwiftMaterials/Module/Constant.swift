@@ -18,4 +18,5 @@ enum Screen: Hashable {
     case scrollViewWithAnimation
     case musicPlayerViewLayout
     case mapKitWithActionSheet
+    case onboardingView
 }
