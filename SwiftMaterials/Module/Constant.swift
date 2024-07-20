@@ -16,4 +16,5 @@ enum Screen: Hashable {
     case transitionAnimation
     case promoCode
     case scrollViewWithAnimation
+    case musicPlayerViewLayout
 }

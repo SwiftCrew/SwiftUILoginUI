@@ -27,6 +27,8 @@ struct PragrammListView: View {
                         PromoCodeView()
                     } else if list.type == .scrollViewWithAnimation {
                         ScrollViewAnimation()
+                    } else if list.type == .musicPlayerViewLayout {
+                        MusicPlayerViewLayout()
                     } else {
                         ListVeiw()
                     }

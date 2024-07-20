@@ -19,7 +19,8 @@ class PragrammListViewModel: ObservableObject {
             ProgrammList(name: "Progress Bar", type: .progressBar),
             ProgrammList(name: "Animated View", type: .transitionAnimation),
             ProgrammList(name: "Promo Code", type: .promoCode),
-            ProgrammList(name: "ScrollView Animation", type: .scrollViewWithAnimation)
+            ProgrammList(name: "ScrollView Animation", type: .scrollViewWithAnimation),
+            ProgrammList(name: "MusicPlayerView Layout", type: .musicPlayerViewLayout)
         ]
     }
 }
