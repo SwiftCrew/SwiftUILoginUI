@@ -21,8 +21,8 @@ class PragrammListViewModel: ObservableObject {
             ProgrammList(name: "Promo Code", type: .promoCode),
             ProgrammList(name: "ScrollView Animation", type: .scrollViewWithAnimation),
             ProgrammList(name: "MusicPlayerView Layout", type: .musicPlayerViewLayout),
-            ProgrammList(name: "MapKit With Action Sheet", type: .mapKitWithActionSheet)
-
+            ProgrammList(name: "MapKit With Action Sheet", type: .mapKitWithActionSheet),
+            ProgrammList(name: "OnboardingView", type: .onboardingView)
         ]
     }
 }
