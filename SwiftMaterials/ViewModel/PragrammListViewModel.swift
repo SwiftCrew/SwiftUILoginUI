@@ -22,7 +22,9 @@ class PragrammListViewModel: ObservableObject {
             ProgrammList(name: "ScrollView Animation", type: .scrollViewWithAnimation),
             ProgrammList(name: "MusicPlayerView Layout", type: .musicPlayerViewLayout),
             ProgrammList(name: "MapKit With Action Sheet", type: .mapKitWithActionSheet),
-            ProgrammList(name: "OnboardingView", type: .onboardingView)
+            ProgrammList(name: "OnboardingView", type: .onboardingView),
+            ProgrammList(name: "LoginLoader", type: .loginLoader)
+
         ]
     }
 }

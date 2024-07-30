@@ -33,6 +33,8 @@ struct PragrammListView: View {
                         MapView()
                     } else if list.type == .onboardingView {
                         OnboardingView()
+                    } else if list.type == .loginLoader {
+                        LoginLoader()
                     } else {
                         ListVeiw()
                     }
