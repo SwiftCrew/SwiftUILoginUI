@@ -10,6 +10,7 @@ import SwiftUI
 struct ProgressBarView: View {
 
     @State var percent: CGFloat = 0
+
     var body: some View {
 
         VStack(spacing: 50) {

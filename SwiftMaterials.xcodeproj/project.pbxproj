@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F120A0C42C590E4800F36BB4 /* LinearLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F120A0C32C590E4800F36BB4 /* LinearLoaderView.swift */; };
+		F120A0C62C590FCE00F36BB4 /* LoginLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F120A0C52C590FCE00F36BB4 /* LoginLoader.swift */; };
 		F13E8C1A2C2153A60088AB83 /* SwiftMaterialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E8C192C2153A60088AB83 /* SwiftMaterialsApp.swift */; };
 		F13E8C1C2C2153A60088AB83 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13E8C1B2C2153A60088AB83 /* MainView.swift */; };
 		F13E8C1E2C2153A80088AB83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F13E8C1D2C2153A80088AB83 /* Assets.xcassets */; };
@@ -62,6 +64,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F120A0C32C590E4800F36BB4 /* LinearLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearLoaderView.swift; sourceTree = "<group>"; };
+		F120A0C52C590FCE00F36BB4 /* LoginLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLoader.swift; sourceTree = "<group>"; };
 		F13E8C162C2153A60088AB83 /* SwiftMaterials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMaterials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13E8C192C2153A60088AB83 /* SwiftMaterialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMaterialsApp.swift; sourceTree = "<group>"; };
 		F13E8C1B2C2153A60088AB83 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -199,6 +203,8 @@
 				F1BC794C2C25AC7100E25DBE /* NewItemView.swift */,
 				F1BC79502C25BBAE00E25DBE /* TODOTabView.swift */,
 				F1C194142C36A9C200A0FAD0 /* ProgressBarView.swift */,
+				F120A0C32C590E4800F36BB4 /* LinearLoaderView.swift */,
+				F120A0C52C590FCE00F36BB4 /* LoginLoader.swift */,
 				F159D34A2C4672CC002A468C /* AnimatedExampleView.swift */,
 				F159D34C2C467740002A468C /* PromoCodeView.swift */,
 				F16B5F132C4A731400CE778E /* ScrollViewAnimation.swift */,
@@ -420,8 +426,10 @@
 				F13E8C582C22FDA90088AB83 /* RectangleImage.swift in Sources */,
 				F1BC794F2C25ACC200E25DBE /* NewItemViewModel.swift in Sources */,
 				F13E8C462C22BBE70088AB83 /* RegisterView.swift in Sources */,
+				F120A0C62C590FCE00F36BB4 /* LoginLoader.swift in Sources */,
 				F13E8C4B2C22C1270088AB83 /* LoginViewModel.swift in Sources */,
 				F13E8C5A2C2328690088AB83 /* RegisterViewModel.swift in Sources */,
+				F120A0C42C590E4800F36BB4 /* LinearLoaderView.swift in Sources */,
 				F16B5F162C4BBCDC00CE778E /* GroupBoxLayout.swift in Sources */,
 				F16B5F182C4BC5D400CE778E /* MapView.swift in Sources */,
 				F16B5F142C4A731400CE778E /* ScrollViewAnimation.swift in Sources */,
